@@ -7,5 +7,5 @@ import com.sem.roomexercise.data.models.TownModel
 
 @Database(entities = [TownModel::class], version = 1)
 abstract class TempLocalDB : RoomDatabase() {
-
+    abstract val townDao: TownDao
 }
